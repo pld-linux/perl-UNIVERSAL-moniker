@@ -6,8 +6,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	UNIVERSAL
 %define	pnam	moniker
-Summary:	Guess how class would be called in real world
-Summary(pl):	Odgadywanie nazwy obiektu w ¶wiecie rzeczywistym
+Summary:	UNIVERSAL::moniker - guess how class would be called in real world
+Summary(pl):	UNIVERSAL::moniker - odgadywanie nazwy obiektu w ¶wiecie rzeczywistym
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.07
 Release:	1
