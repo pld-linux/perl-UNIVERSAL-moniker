@@ -1,16 +1,18 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
-# _without_autodeps - don't BR packages needed only for resolving deps
+# _with_tests		- perform "make test"
+# _without_autodeps	- don't BR packages needed only for resolving deps
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	UNIVERSAL
 %define	pnam	moniker
 Summary:	Guess how class would be called in real world
+Summary(pl):	Odgadywanie sposobu wywo³ywania klasy
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.03
 Release:	1
-License:	Same as Perl itself
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	281ec7f40432bb100f36ebe38632ec66
@@ -25,6 +27,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 UNIVERSAL::moniker enables classes to make a good guess at what they
 would be called in the real world.
+
+%description -l pl
+UNIVERSAL::moniker w³±cza w klasach mo¿liwo¶æ odgadywania, w jaki
+sposób mog± te klasy w rzeczywisto¶ci byæ wywo³ywane.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
