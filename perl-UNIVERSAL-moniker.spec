@@ -4,8 +4,8 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	UNIVERSAL
-%define	pnam	moniker
+%define		pdir	UNIVERSAL
+%define		pnam	moniker
 Summary:	UNIVERSAL::moniker - guess how class would be called in real world
 Summary(pl):	UNIVERSAL::moniker - odgadywanie nazwy obiektu w ¶wiecie rzeczywistym
 Name:		perl-UNIVERSAL-moniker
