@@ -9,13 +9,13 @@
 Summary:	Guess how class would be called in real world
 Summary(pl):	Odgadywanie sposobu wywo³ywania klasy
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.05
+Version:	0.06
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1b17c063445f9b4273d35a55a5fa0960
+# Source0-md5:	416e87d67567078090e76b6d406f0b26
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if 0%{!?_without_autodeps:1}%{?_with_tests:1}
