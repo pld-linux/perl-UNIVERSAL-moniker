@@ -7,7 +7,7 @@
 %define	pdir	UNIVERSAL
 %define	pnam	moniker
 Summary:	Guess how class would be called in real world
-Summary(pl):	Odgadywanie sposobu wywo³ywania klasy
+Summary(pl):	Odgadywanie nazwy obiektu w ¶wiecie rzeczywistym
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.06
 Release:	1
@@ -29,8 +29,8 @@ UNIVERSAL::moniker enables classes to make a good guess at what they
 would be called in the real world.
 
 %description -l pl
-UNIVERSAL::moniker w³±cza w klasach mo¿liwo¶æ odgadywania, w jaki
-sposób mog± te klasy w rzeczywisto¶ci byæ wywo³ywane.
+UNIVERSAL::moniker pozwala klasom na odgadniêcia jak w ¶wiecie
+rzeczywistym nazywa³by siê nale¿±ce do nich obiekty.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
