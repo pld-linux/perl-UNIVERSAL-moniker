@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	tests	# perform "make test"
+%bcond_without	tests		# do not perform "make test"
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 #
 %include	/usr/lib/rpm/macros.perl
@@ -12,7 +12,7 @@ Name:		perl-%{pdir}-%{pnam}
 Version:	0.07
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fc4bb0ccd490478fa265bd0cf89f1abb
@@ -39,6 +39,7 @@ rzeczywistym nazywa³by siê nale¿±ce do nich obiekty.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
 %{?with_tests:%{__make} test}
 
 %install
