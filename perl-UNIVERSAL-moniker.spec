@@ -9,7 +9,7 @@ Summary:	UNIVERSAL::moniker - guess how class would be called in real world
 Summary(pl.UTF-8):	UNIVERSAL::moniker - odgadywanie nazwy obiektu w świecie rzeczywistym
 Name:		perl-UNIVERSAL-moniker
 Version:	0.08
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
